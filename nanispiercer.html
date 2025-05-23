@@ -147,7 +147,41 @@
 
         @media (max-width: 768px) {
             .flex-layout {
-                flex-direction: column; /* Empilha o texto e a imagem em telas menores */
+                flex-direction: column; /* Empilha texto e imagem */
+                text-align: center; /* Centraliza o texto */
+            }
+
+            .text-content {
+                text-align: center; /* Centraliza o texto */
+                margin-bottom: 1.5rem; /* Espaço entre texto e imagem */
+            }
+
+            .cta-buttons {
+                display: flex;
+                flex-direction: column; /* Botões empilhados */
+                gap: 1rem; /* Espaço entre os botões */
+                align-items: center;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr; /* Uma coluna para itens */
+            }
+
+            .gallery {
+                grid-template-columns: 1fr; /* Uma coluna para imagens */
+            }
+
+            .gallery-item img {
+                height: auto; /* Ajusta a altura para manter proporção */
+            }
+
+            .contact p {
+                text-align: center; /* Centraliza o texto */
+            }
+
+            .contact-button {
+                width: 100%; /* Botão ocupa toda a largura */
+                text-align: center;
             }
         }
 
@@ -387,12 +421,12 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Nanis Piercer. Todos os direitos reservados.</p>
-            <p>Piercer profissional em Uberaba, MG, no estúdio <a href="#" target="_blank">Thais Rubi Tattoo</a> (adicione o link do estúdio se houver).</p>
-            <p>Desenvolvido com ❤️</p>
-        </div>
-    </footer>
+    <div class="footer">
+        <p>
+            &copy; 2025 <a href="https://www.moraisdigitalsolutions.site/" target="_blank">Morais Digital</a>. Todos os direitos reservados.
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
