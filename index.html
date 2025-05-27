@@ -3,129 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Na BNT, transformamos tecnologia em resultados reais para o seu negócio.">
-    <title>BNT - Soluções Digitais</title>
+    <meta name="description" content="Morais Digital Solutions - Soluções digitais personalizadas para impulsionar empresas locais.">
+    <title>Morais Digital Solutions - Transformando Ideias em Resultados</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-laptop-code me-2"></i>BNT</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-laptop-code me-2"></i>Morais Digital Solutions</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#processo">Nosso Processo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Transforme o seu mundo digital com a <span class="text-warning">BNT</span></h1>
-            <p class="lead">Tecnologia sob medida para impulsionar resultados. Conecte sua marca ao futuro com soluções inovadoras e estratégicas.</p>
-            <a href="#contact" class="btn btn-light btn-lg fw-bold px-4">Fale com a Gente</a>
+    <header class="header-bg text-white text-center py-5">
+        <canvas id="starfield" width="2000" height="1500"></canvas>
+        <div class="container header-content-wrapper">
+            <div class="rocket-animation-container mb-4">
+                <div class="loader">
+                    <div class="rocket">
+                        <div class="dot">
+                            <i class="fas fa-rocket"></i>
+                            <i class="fas fa-cloud" style="--i:0;"></i>
+                            <i class="fas fa-cloud" style="--i:1;"></i>
+                            <i class="fas fa-cloud" style="--i:2;"></i>
+                            <i class="fas fa-cloud" style="--i:3;"></i>
+                            <i class="fas fa-cloud" style="--i:4;"></i>
+                            <i class="fas fa-cloud" style="--i:5;"></i>
+                        </div>
+                    </div>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <h1 class="display-4 fw-bold mt-4">
+                Transforme sua <span class="highlight-word">Presença Digital</span> em <span class="highlight-word">Resultados Reais</span>
+            </h1>
+            <p class="lead my-4">Criamos sites incríveis, otimizamos sua visibilidade no Google (SEO Local) e desenvolvemos soluções personalizadas para atrair mais clientes e impulsionar o crescimento do seu negócio.</p>
+            <a href="#contato" class="btn btn-primary btn-lg fw-bold px-4 btn-header-cta">
+                Fale Conosco e Comece a Crescer <i class="fas fa-arrow-right ms-2"></i>
+            </a>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="sobre" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Quem Somos</h2>
-            <p class="lead text-center">
-                Na <strong>BNT</strong>, somos movidos pela inovação. Acreditamos que a tecnologia é mais do que um recurso — é o motor da transformação. 
-                Unimos estratégia, criatividade e know-how técnico para criar soluções digitais que não apenas atendem, mas superam expectativas.
-            </p>
-            <p class="text-center">
-                Atuamos lado a lado com nossos clientes, entendendo suas necessidades e desenvolvendo soluções sob medida que agregam valor e geram resultados reais.
-                Do planejamento à execução, somos parceiros na construção de um futuro digital mais eficiente, seguro e inteligente.
-            </p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">O que Fazemos</h2>
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-globe fa-3x text-primary mb-3"></i>
-                    <h4 class="fw-bold">Desenvolvimento Web</h4>
-                    <p>Construímos sites e sistemas modernos, responsivos e otimizados, que fortalecem sua presença online e impressionam seu público.</p>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <p class="lead">Na <strong>Morais Digital Solutions</strong>, transformamos tecnologia em resultados concretos. Nossa missão é ajudar empresas locais a prosperarem no ambiente digital, conectando você ao público certo e fortalecendo sua marca na região.</p>
+                    <p>Acreditamos que cada negócio é único. Por isso, nossa abordagem começa com uma conversa para entender profundamente seus desafios e objetivos. A partir daí, desenvolvemos e implementamos soluções personalizadas – como sites que convertem visitantes em clientes e estratégias de SEO Local que colocam você à frente da concorrência – focadas em gerar resultados mensuráveis.</p>
+                    <p>Estamos aqui para ser seu parceiro estratégico na jornada digital, simplificando a tecnologia e transformando-a em uma ferramenta poderosa para o sucesso do seu negócio local.</p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                    <h4 class="fw-bold">Marketing Digital & SEO</h4>
-                    <p>Impulsionamos seu alcance com estratégias inteligentes de tráfego, ranqueamento no Google e campanhas de alta conversão.</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-cogs fa-3x text-primary mb-3"></i>
-                    <h4 class="fw-bold">Soluções Personalizadas</h4>
-                    <p>Desenvolvemos plataformas e automações sob medida para resolver desafios específicos do seu negócio com tecnologia de ponta.</p>
+                <div class="col-lg-6 text-center">
+                    <img src="img/logo.jpeg" class="img-fluid rounded shadow" alt="Sobre Morais Digital Solutions">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">O Que Fazemos por Você</h2>
+            <div class="row text-center justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#modalCriacaoSites" data-bs-toggle="modal" class="text-decoration-none">
+                        <div class="card h-100 card-hover shadow-sm">
+                            <div class="card-body p-4">
+                                <i class="fas fa-globe fa-3x"></i>
+                                <h4 class="card-title mt-3">Criação de Sites Profissionais</h4>
+                                <p class="card-text">Criamos a sua vitrine digital perfeita: sites institucionais e landing pages que combinam design profissional, responsividade e otimização para buscadores.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#modalCatalogosOnline" data-bs-toggle="modal" class="text-decoration-none">
+                        <div class="card h-100 card-hover shadow-sm">
+                            <div class="card-body p-4">
+                                <i class="fas fa-box-open fa-3x"></i>
+                                <h4 class="card-title mt-3">Catálogos Online Inteligentes</h4>
+                                <p class="card-text">Apresente seus produtos ou serviços de forma organizada, visualmente atraente e sempre atualizada. Desenvolvemos catálogos online fáceis de navegar e gerenciar.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <a href="#modalSEOLocal" data-bs-toggle="modal" class="text-decoration-none">
+                        <div class="card h-100 card-hover shadow-sm">
+                            <div class="card-body p-4">
+                                <i class="fas fa-search fa-3x"></i>
+                                <h4 class="card-title mt-3">SEO Local: Seja Encontrado na Sua Região</h4>
+                                <p class="card-text">Seja encontrado exatamente por quem procura seus serviços na sua cidade! Otimizamos seu site e perfil no Google para atrair mais clientes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="processo" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nosso Processo Simplificado</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <i class="fas fa-comments fa-3x mb-3"></i>
+                        <h4>1. Diagnóstico e Briefing</h4>
+                        <p>Começamos com uma conversa aprofundada para entender sua empresa, seu público-alvo e seus objetivos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <i class="fas fa-file-alt fa-3x mb-3"></i>
+                        <h4>2. Estratégia e Proposta</h4>
+                        <p>Desenvolvemos uma proposta personalizada, detalhando a estratégia, as soluções recomendadas e o cronograma.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                        <h4>3. Criação e Implementação</h4>
+                        <p>Transformamos ideias em realidade, mantendo você atualizado durante todo o processo.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <i class="fas fa-check-circle fa-3x mb-3"></i>
+                        <h4>4. Lançamento e Suporte</h4>
+                        <p>Entregamos o projeto pronto para gerar resultados e oferecemos suporte inicial para garantir o sucesso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Fale Conosco</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h5 class="fw-bold">Email</h5>
-                    <p><a href="mailto:contato@bnt.com">contato@bnt.com</a></p>
-                    <h5 class="fw-bold">Telefone</h5>
-                    <p><a href="tel:+5534991083961">+55 34 99108-3961</a></p>
-                    <h5 class="fw-bold">Redes Sociais</h5>
-                    <p>
-                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram"></i> Instagram</a>
-                        <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    </p>
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="info-item d-flex align-items-center bg-white p-4 rounded shadow-sm mb-4">
+                        <i class="fas fa-envelope fa-2x me-3 contact-icon"></i>
+                        <div>
+                            <h5 class="mb-1">Email:</h5>
+                            <p class="mb-0"><a href="mailto:moraisgabriel16@gmail.com" target="_blank">moraisgabriel16@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item d-flex align-items-center bg-white p-4 rounded shadow-sm mb-4">
+                        <i class="fab fa-whatsapp fa-2x me-3 contact-icon"></i>
+                        <div>
+                            <h5 class="mb-1">WhatsApp:</h5>
+                            <p class="mb-0"><a href="https://wa.me/5534991083961" target="_blank">+55 34 99108-3961</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item d-flex align-items-center bg-white p-4 rounded shadow-sm">
+                        <i class="fab fa-linkedin fa-2x me-3 contact-icon"></i>
+                        <div>
+                            <h5 class="mb-1">LinkedIn:</h5>
+                            <p class="mb-0"><a href="https://www.linkedin.com/in/gabriel-morais-5598b4113/" target="_blank">Gabriel Morais</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <form action="#" method="POST">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="name" required>
+                <div class="col-lg-7">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-5 rounded shadow-sm">
+                        <input type="hidden" name="access_key" value="9b186bd7-46f1-4ebf-95dd-cbd82afeb124">
+                        <input type="hidden" name="subject" value="Nova mensagem do Site Morais Digital Solutions" />
+                        <input type="hidden" name="from_name" value="Morais Digital Solutions Site">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <label for="name-field" class="form-label">Seu Nome</label>
+                                <input type="text" name="name" id="name-field" class="form-control" placeholder="Digite seu nome" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email-field" class="form-label">Seu Email</label>
+                                <input type="email" name="email" id="email-field" class="form-control" placeholder="Digite seu email" required />
+                            </div>
+                            <div class="col-md-12">
+                                <label for="subject-field" class="form-label">Assunto</label>
+                                <input type="text" name="subject" id="subject-field" class="form-control" placeholder="Digite o assunto" required />
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message-field" class="form-label">Mensagem</label>
+                                <textarea name="message" id="message-field" class="form-control" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary px-5 py-2">Enviar Mensagem</button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary fw-bold px-4">Enviar</button>
+                        <div id="form-result" class="mt-3"></div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-            <p class="mb-0">&copy; 2025 BNT - Soluções Digitais. Todos os direitos reservados.</p>
+            <div class="social-icons mb-3">
+                <a href="https://www.linkedin.com/in/gabriel-morais-5598b4113/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/5534991083961" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 Morais Digital Solutions. Transformando ideias em resultados.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
